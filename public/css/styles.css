@@ -1,0 +1,59 @@
+/* Lear flex box in case we want to learn about css as its a great tool*/
+body{
+    color : #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto ; /*first it's top an bottom then the secind argument is left and right */
+    padding: 0 16px;
+
+    display : flex ; /*This is a special type of coding in css that enables us to have lot more styling options in css*/
+    flex-direction: column;
+    min-height : 100vh; /* we want the footer to be exactly below so for tht we will give body a height of 100% the view height (of screen)*/
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+
+footer {
+    color:#888888;
+    padding : 16px 0;
+    margin-top:16px;
+    border-top:1px solid #EEEEEE;
+    background : #FFFFFF;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a{
+    color : #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+.potrait{     /*Now if we only want to apply the styles on selected few elements we can define them as a class*/
+    width:250px;  /*Like we have defined the class potrait and we want it to be applied in about me picture*/
+}                 /*So we will define here as class potrait and also there as potrait (Or any name)*/
+
+input{
+    border :1px solid #cccccc;
+    padding : 8px;
+}
+
+button {
+    cursor : pointer;
+    border : 1px solid #888888;
+    background : #888888;
+    color : white;
+    padding : 8px;
+
+}

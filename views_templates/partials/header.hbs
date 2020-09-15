@@ -1,0 +1,14 @@
+<!-- Is used to keep the same format or layout across every page -->
+<!-- Although to run the hbs command we need to modify nodemon to process hbs files too by using command'nodemon src/app.js -e//(Executable) js,hbs' -->
+
+<!--<h1>Static header.hbs text</h1> --> <!-- This is not a complete html file just we need to put the parts of html here -->
+<!-- We can define the static header like the one above or we can also provide the dynamic header -->
+<h1>{{title}}</h1>
+
+<header>
+    <div> <!-- We use this to set up the links everywhere as the notification bar -->
+        <a href="/">Weather</a>
+        <a href="/about">About</a>
+        <a href="/help">Help</a>
+    </div>
+</header>

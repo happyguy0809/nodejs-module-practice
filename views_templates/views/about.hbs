@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css"> <!-- We need to link the css sheet first here in the header-->
+        <link rel='icon' href='/images/risingsun.png'> <!-- Linking the logo that comes in the tab-->
+    </head>
+    <body>
+        <div class= 'main-content'>
+            {{>header}} <!-- The partial file that we have made (file saved is header.hbs in the views__templates/partials-->
+            <!--<h1>{{title}}</h1>-->
+            <img class = 'potrait otherclassnameifany'src = "/images/elephant.jpeg"> <!-- We need to have the image displayed here if there are any-->
+        </div>
+        {{>footer}}   <!-- we can have multiple class names also for a single quote -->
+    </body>
+</html>

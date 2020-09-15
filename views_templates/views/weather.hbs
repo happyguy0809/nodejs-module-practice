@@ -1,0 +1,19 @@
+<!-- Handlebar file is same as the html file only with the provision to add teh dynamic pages -->
+<!-- If we want to have static file it's better to put it in the public folder for dynamic put in the view folder-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='icon' href='/images/risingsun.png'> <!-- Linking the logo that comes in the tab-->
+        <link rel="stylesheet" href="/css/styles.css"> <!-- We need to link the css sheet first here in the header-->
+        <script src="/js/clientside.js"></script> <!-- We need to add the scripts like this if there are any-->
+        
+        <body>
+            <div class= 'main-content'>
+                {{>header}} <!-- The partial file that we have made (file saved is header.hbs in the views__templates/partials-->
+                <p>The data is as follows</p>
+            </div>
+            <!--<h1>{{title}}</h1>--> <!-- title provided from the rendered object in app.js file -->
+            <p>Created by {{name}}</p> <!-- name provided from the rendered object in app.js -->
+            {{>footer}}
+    </body>
+</html>
