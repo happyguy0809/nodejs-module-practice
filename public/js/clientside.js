@@ -30,7 +30,7 @@ weatherform.addEventListener('submit', (event) => {   // calling a callback func
     //Storing the input of the user
     const userLocation = search.value
     //Now we need to generate the response from the url now if we type in the city
-    fetch('http://localhost:3000/weather?address=' + encodeURIComponent(userLocation)).then((response) => {
+    fetch('/weather?address=' + encodeURIComponent(userLocation)).then((response) => {
        response.json().then((data) => {
             if(data.error) console.log(data.error)
                 console.log(data)

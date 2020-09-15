@@ -147,8 +147,13 @@ app.get('*', (request,response) => {
 })
 //To start a server use listen()
 //A server will always stay on unless we close it using commands or 'cntrl + C'
-app.listen(3000, () => { //3000 is just the local port that we have defined as our server where we can see the datalog
-    console.log('Server is up on Port 3000')
+// app.listen(3000, () => { //3000 is just the local port that we have defined as our server where we can see the datalog
+//     console.log('Server is up on Port 3000')
+// })
+
+const port = process.env.PORT || 3000 //We need to define the logical operator port for when we are running the APP LOCALLY
+app.listen(port, () => {
+    console.log('Server is running on the port ' + port)
 })
 
 //Now for every change we have made we have to restart the erver but its really time consuming
